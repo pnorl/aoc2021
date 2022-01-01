@@ -17,4 +17,4 @@ if (response.status_code != 200):
     print("Download failed with code {}".format(response.status_code))
     sys.exit()
 
-sys.stdout.write(str(response.text))
+sys.stdout.write(str(response.text.rstrip()))
